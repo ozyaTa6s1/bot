@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Ozyat Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="main-card">
+        <div class="header">
+            <div class="logo" style="color: #00ff88;">
+                <i class="fas fa-user-check"></i>
+            </div>
+            <h1>BIENVENIDO <span>{{ username }}</span></h1>
+            <p>ID: {{ discord_id }}</p>
+        </div>
+
+        <div class="content" style="text-align: center;">
+            <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
+                Tu cuenta está completamente autorizada. Ya puedes disfrutar de todas las funciones del bot en Discord.
+            </p>
+            
+            <div style="background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.2); padding: 15px; border-radius: 12px; margin-bottom: 25px;">
+                <span style="color: #00ff88; font-weight: bold;"><i class="fas fa-check"></i> ESTADO: ACTIVO</span>
+            </div>
+
+            <a href="https://discord.com/app" class="shiny-btn" style="text-decoration: none; display: block; margin-bottom: 15px;">
+                <span>ABRIR DISCORD</span>
+            </a>
+
+            <a href="/logout" style="color: rgba(255,255,255,0.3); font-size: 0.8rem; text-decoration: none;">
+                Cerrar sesión (Desvincular navegador)
+            </a>
+        </div>
+    </div>
+</body>
+</html>

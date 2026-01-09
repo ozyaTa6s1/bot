@@ -1,0 +1,981 @@
+{
+    "EndPoint": "78y6ma",
+    "Data": {
+        "clients": 100,
+        "gametype": "SpainCity",
+        "hostname": "[^1E^3S^1P^7]^1 Spain^3City^1 Remastered |\ud83d\udcb2 85K Iniciales ^3| \ud83d\udd2a BANDAS DISPONIBLES ^2 | \ud83d\ude97 SORTEOS DIARIOS |^1 \ud83d\udc77\u200d\u2642\ufe0f STAFF 24/7 ^0| \ud83d\udcaf EVENTOS SEMANALES ^8| \ud83d\ude81 COCHES UNICOS ^5| \ud83d\udce1DISCORD: discord.gg/spaincity^0",
+        "mapname": "SpainCity",
+        "sv_maxclients": 650,
+        "enhancedHostSupport": true,
+        "requestSteamTicket": "on",
+        "resources": [
+            "hardcap",
+            "esx_license",
+            "cfx-gabz-tuners",
+            "bob74_ipl",
+            "es_extended",
+            "skillbar",
+            "SCAC",
+            "sc_props_assets",
+            "radio",
+            "sc_props_assets2",
+            "connectqueue",
+            "esx_basicneeds",
+            "gamz-skillsystem",
+            "lockpick",
+            "yarn",
+            "ox_fuel",
+            "chat",
+            "mugshot",
+            "progressbar",
+            "zropasc1",
+            "pma-voice",
+            "screenshot-basic",
+            "esx_status",
+            "sessionmanager",
+            "-REPLACE-",
+            "sc_vip",
+            "dk_js_labs",
+            "breze_bowling_map",
+            "spawnmanager",
+            "webpack",
+            "cron",
+            "nv_DjDesk",
+            "esx_addonaccount",
+            "fiv3devs_pacificbluffs",
+            "esx_ambulancejob",
+            "esx_billing",
+            "esx_dmvschool",
+            "Buty-KartRent",
+            "esx_context",
+            "esx_datastore",
+            "sc_5v5",
+            "ox_lib",
+            "k-comserv",
+            "dk_js_drugs",
+            "esx_identity",
+            "esx_menu_default",
+            "sc_navidad",
+            "esx_textui",
+            "esx_menu_dialog",
+            "esx_notify",
+            "esx_society",
+            "c-logging",
+            "illenium-appearance",
+            "c-ck",
+            "c-smallresources",
+            "cfx-gabz-barber",
+            "dk_js_help",
+            "xsound",
+            "dk_utils",
+            "ox_inventory",
+            "dpclothing",
+            "esx_rpchat",
+            "k-peds",
+            "renzu_customs",
+            "sc_heli_functions",
+            "sc_props4",
+            "zpedsc2",
+            "cd_easytime",
+            "cfx-gabz-suburban",
+            "oxmysql",
+            "BCall_progress",
+            "Buty-CarWash",
+            "Buty-Clothes",
+            "Buty_InfiniteJobs",
+            "cd_drawtextui",
+            "cd_garage",
+            "cd_garageshell",
+            "sc_doorlock",
+            "drugs_creator",
+            "evo_sound",
+            "evo_sound_player",
+            "jobs_creator",
+            "lb-phone",
+            "sc_antigp",
+            "lb-phoneprop",
+            "origen_pausemenu",
+            "sc_remote",
+            "origen_police",
+            "rcore_bowling",
+            "rcore_casino",
+            "rcore_dance",
+            "noob1",
+            "rcore_dance_assets",
+            "rcore_golf",
+            "rcore_pingpong",
+            "rcore_pingpong_assets",
+            "rcore_pool",
+            "rcore_tattoos",
+            "sc_policeform",
+            "rcore_tennis",
+            "rtx_vehiclemenu",
+            "Masi_mosleys",
+            "bl_ui",
+            "bmx",
+            "energy_arenapvp2",
+            "sc_airsoft",
+            "sc_alquilervehs",
+            "sc_cargar",
+            "sc_anc",
+            "tattoos",
+            "sc_assets",
+            "sc_b",
+            "sc_banking",
+            "sc_c",
+            "sc_cards",
+            "sc_cayo",
+            "sc_compraventa",
+            "sc_drops",
+            "sc_duels",
+            "sc_emotes",
+            "monitor",
+            "sc_flametune",
+            "sc_gym",
+            "sc_holdup",
+            "sc_hoods",
+            "sc_hosp",
+            "sc_housing",
+            "sc_hud",
+            "sc_jail",
+            "sc_loadingscreen",
+            "sc_logs",
+            "cfx-gabz-mapdata",
+            "sc_mafiaarmas",
+            "sc_menupersonal",
+            "sc_minimap",
+            "sc_notify",
+            "sc_podio",
+            "sc_props",
+            "sc_pvp",
+            "sc_reportes",
+            "sc_reportgp2",
+            "sc_roboatm",
+            "sc_storms",
+            "sc_trunks",
+            "sc_vehicleshopv2",
+            "sc_weapons",
+            "sc_conce_vips",
+            "cfx-gabz-altruists",
+            "cfx-gabz-bahama",
+            "cfx-gabz-binco",
+            "cfx-gabz-burgershot",
+            "cfx-gabz-casino",
+            "cfx-gabz-catcafe",
+            "cfx-gabz-pearls",
+            "cfx-gabz-pizzeria",
+            "cfx-gabz-ponsonbys",
+            "cfx-gabz-prison",
+            "cfx-gabz-scenarios",
+            "cfx-gabz-tattoo",
+            "brnx_hautenightclub",
+            "ed_narcohideouts",
+            "entitysets",
+            "ibonoja_mrpd_full_editable",
+            "map",
+            "maps_luga",
+            "nightclub",
+            "pb_map_cafeteria",
+            "sc_10v10",
+            "sc_mapeos",
+            "spaincity_mapas",
+            "!SpainSounds",
+            "caballosexy",
+            "seraph_goat_female",
+            "coches_gc_luga",
+            "coches_sugerencia",
+            "coches_varios",
+            "sc_barcos",
+            "sc_cnp_luga",
+            "sc_coches",
+            "sc_cochesCH",
+            "sc_cochesvarios",
+            "sc_coches_donaciones",
+            "sc_coches_js",
+            "sc_coches_luga",
+            "sc_coches_octubre",
+            "sc_conce_coronas",
+            "sc_conce_normal",
+            "sc_driftdonaciones",
+            "sc_ems_luga",
+            "sc_taxis_luga",
+            "spaincityrp",
+            "SpainCity_Poligon_Mods",
+            "wheelspack",
+            "-PEDSSC-",
+            "seraph_goat_male",
+            "aropasc1",
+            "aropasc2",
+            "eup-stream",
+            "WC_Female_Without_Brands",
+            "WC_Male_Without_Brands",
+            "xtxvxtx_female_male_body_remastered",
+            "amb-roxwood",
+            "amb-roxwood-enviro",
+            "amb-roxwood-interiors",
+            "amb-roxwood-map",
+            "amb-roxwood-map2",
+            "amb-roxwood-mapdata",
+            "amb-roxwood-patches",
+            "amb-roxwood-props",
+            "rtx_waterpark_roxwood",
+            "western_mallclub",
+            "BigoZ_BayShore",
+            "bridgecayo",
+            "cfx-bigoz-mapdata",
+            "energy_arenamap",
+            "jensmap_flickerscomics",
+            "k4mb1-oilrig",
+            "mb-antineas",
+            "rfc_los_santos_customs",
+            "rtx_sempre_skatepark",
+            "rtx_themepark",
+            "rtx_themepark_objects"
+        ],
+        "server": "FXServer-master SERVER v1.0.0.23918 win32",
+        "vars": {
+            "CEO": "danisuarez",
+            "Discord": "discord.gg/spaincity",
+            "Tiempo Activo": "00h 18m",
+            "banner_connecting": "https://uploading.draik.es/spainhost/banner.png",
+            "banner_detail": "https://uploading.draik.es/spainhost/banner.png",
+            "gamename": "gta5",
+            "locale": "es-ES",
+            "onesync_enabled": "true",
+            "sv_disableClientReplays": "false",
+            "sv_enforceGameBuild": "3095",
+            "sv_enhancedHostSupport": "true",
+            "sv_lan": "false",
+            "sv_licenseKeyToken": "4265945xwnqin0us1opdy6a2_1495284:ef13e32a45c46e49a90ea9ea1101cc9f3c5b18ab6c19aee73f13416b3f8cc7f2",
+            "sv_maxClients": "650",
+            "sv_poolSizesIncrease": "",
+            "sv_projectDesc": "[ 75.000$ INICIALES ][ WIPE RECIENTE ][ RULETA DIARIA ][ COCHE GRATIS ][ BANDAS GRATIS ]",
+            "sv_projectName": "^8SpainCity Remastered\u26a1",
+            "sv_pureLevel": "0",
+            "sv_replaceExeToSwitchBuilds": "false",
+            "sv_scriptHookAllowed": "false",
+            "tags": "spaincity, roleplay, spain, rp, esp, espa\u00f1ol, serious rp, jobs, lat, cars, ems, drugs, custom, reallife, serious, custom cars, cops, economy, espa\u00f1a, espa\u00f1oles, policia espa\u00f1ola, server espa\u00f1ol, guardia civil, cnp, cuerpo nacional de policia, gc, el mejor server, servidor en espa\u00f1ol, coches reales, mafias, drogas, dinero, mucho dinero, dreams rp, rol serio, servidor serio, serio, admins activos, administracion, mafias libres, mapeos, facilidad para cargos, cargos libres, garage central, comisaria real, helicopteros, barcos, aviones, espa\u00f1ita, inventario, motos, motos reales, barcos reales, casas de lujo, casas, cosas baratas, puntos ocultos, drogas ocultas, buen server, espa, espa\u00f1, server habla hispana, habla hispana, server hispano, latinoamerica, uruguay, argentina, gente espa\u00f1ola, ciudad espa\u00f1ola, la ciudad de espa\u00f1a, top espa\u00f1a, el mejor de espa\u00f1a, inaguracion, espana, youtubers, twitch, colombia, mexico, ciudad de lujo, drogas exclusivas, exclusivo, marihuana, cocaina, puntos de droga ocultos, serious rp, empresas, bolivia, costarica, cuba, brazil, brasil, catalu\u00f1a, madrid, barcelona, coches personalizados, armas personalizadas, racing, armamento, muchas armas, carreras de coches, carreras de coches espa\u00f1olas, circuito, vida real espa\u00f1ola, vida real, economia, economia espa\u00f1ola, economia real, realista, bandas,esx",
+            "txAdmin-version": "8.0.1",
+            "premium": "pt"
+        },
+        "selfReportedClients": 103,
+        "players": [
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 3,
+                "identifiers": [],
+                "name": "^2 Isa ^1 Haute",
+                "ping": 84
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 31,
+                "identifiers": [],
+                "name": "patron33 mas payo q camaron",
+                "ping": 54
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 108,
+                "identifiers": [],
+                "name": "^#82e0ff BENY JR",
+                "ping": 54
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 13,
+                "identifiers": [],
+                "name": "erikr",
+                "ping": 72
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 16,
+                "identifiers": [],
+                "name": "^#c8a2ffn.^#9a7accga^#6b5299me^#3d2a66ll^#000000a",
+                "ping": 63
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 44,
+                "identifiers": [],
+                "name": "TK.LECHUGAA^3\u1d4f^8\u1d49^3\u1d57^8\u1d43",
+                "ping": 64
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 120,
+                "identifiers": [],
+                "name": "EKO",
+                "ping": 48
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 8,
+                "identifiers": [],
+                "name": "morci",
+                "ping": 44
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 6,
+                "identifiers": [],
+                "name": "Juan mecanico ",
+                "ping": 47
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 59,
+                "identifiers": [],
+                "name": "I will return",
+                "ping": 65
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 47,
+                "identifiers": [],
+                "name": "PC",
+                "ping": 59
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 93,
+                "identifiers": [],
+                "name": "jguerreroc",
+                "ping": 67
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 90,
+                "identifiers": [],
+                "name": "albertochicote777",
+                "ping": 69
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 19,
+                "identifiers": [],
+                "name": "Tururu",
+                "ping": 63
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 27,
+                "identifiers": [],
+                "name": "Aitor",
+                "ping": 146
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 11,
+                "identifiers": [],
+                "name": "dark",
+                "ping": 61
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 14,
+                "identifiers": [],
+                "name": ".",
+                "ping": 91
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 5,
+                "identifiers": [],
+                "name": "mariopereira",
+                "ping": 52
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 20,
+                "identifiers": [],
+                "name": "elPATRONpayico",
+                "ping": 67
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 26,
+                "identifiers": [],
+                "name": "^*^9Sky",
+                "ping": 75
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 33,
+                "identifiers": [],
+                "name": "Usuario",
+                "ping": 78
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 1,
+                "identifiers": [],
+                "name": "djmamamelo",
+                "ping": 50
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 25,
+                "identifiers": [],
+                "name": "\ud808\udd9c\ud835\udd3b\ud835\udd5a\ud835\udd60 \ud835\udd39\ud835\udd63\ud835\udd52\ud835\udd5f\ud835\udd55\ud835\udd60\ud808\udd9c",
+                "ping": 56
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 12,
+                "identifiers": [],
+                "name": "aalmenarabautista",
+                "ping": 77
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 50,
+                "identifiers": [],
+                "name": "^#ff0000\ud835\udd74^#ff4040\ud835\udd93^#ff6969\ud835\udd86^#ff9090\ud835\udd9e^#ffb2b2\ud835\udd86 ^#ffb2b2\u2661 \u273f",
+                "ping": 84
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 43,
+                "identifiers": [],
+                "name": "froggman",
+                "ping": 96
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 24,
+                "identifiers": [],
+                "name": "ENPOPA",
+                "ping": 97
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 42,
+                "identifiers": [],
+                "name": "joant",
+                "ping": 74
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 35,
+                "identifiers": [],
+                "name": "asier",
+                "ping": 84
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 18,
+                "identifiers": [],
+                "name": "danie",
+                "ping": 74
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 22,
+                "identifiers": [],
+                "name": "hlaraneiro",
+                "ping": 72
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 17,
+                "identifiers": [],
+                "name": "*w",
+                "ping": 55
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 32,
+                "identifiers": [],
+                "name": "Marques77680839",
+                "ping": 119
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 4,
+                "identifiers": [],
+                "name": "Relax",
+                "ping": 86
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 28,
+                "identifiers": [],
+                "name": "^#a1ddf7\ud83d\udc09\ud835\udcf2\ud835\udcff\ud835\udcea\ud835\udcf7\ud83d\udc09 ",
+                "ping": 55
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 23,
+                "identifiers": [],
+                "name": "Marcos",
+                "ping": 60
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 29,
+                "identifiers": [],
+                "name": "Serrxno_",
+                "ping": 66
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 36,
+                "identifiers": [],
+                "name": "Nayi",
+                "ping": 71
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 30,
+                "identifiers": [],
+                "name": "Fermin",
+                "ping": 60
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 34,
+                "identifiers": [],
+                "name": "Xokolatess",
+                "ping": 51
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 39,
+                "identifiers": [],
+                "name": "Pucca",
+                "ping": 82
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 37,
+                "identifiers": [],
+                "name": "cmbk??",
+                "ping": 54
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 41,
+                "identifiers": [],
+                "name": "Jose Duque",
+                "ping": 81
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 45,
+                "identifiers": [],
+                "name": "macaco\u00b3\u00b3",
+                "ping": 60
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 53,
+                "identifiers": [],
+                "name": "lupaCiega",
+                "ping": 49
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 46,
+                "identifiers": [],
+                "name": "POLITO (JustJK)",
+                "ping": 112
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 58,
+                "identifiers": [],
+                "name": "viti",
+                "ping": 59
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 49,
+                "identifiers": [],
+                "name": "IvanD3546",
+                "ping": 94
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 48,
+                "identifiers": [],
+                "name": "alvarogonzalez2107",
+                "ping": 59
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 55,
+                "identifiers": [],
+                "name": "xlowe",
+                "ping": 70
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 54,
+                "identifiers": [],
+                "name": "\ud835\udd71\ud835\udd8e\ud835\udd93\u0342\ud835\udd86",
+                "ping": 66
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 57,
+                "identifiers": [],
+                "name": "eopev",
+                "ping": 56
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 60,
+                "identifiers": [],
+                "name": "^*^#000000\ua9d6\u1cbc^7 \u1d04\u029f\u1d00\u1d1c\u1d1c \u2661\u1cbc^#000000\u2e38\u1cbc^7\u00b9\u2078",
+                "ping": 83
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 61,
+                "identifiers": [],
+                "name": "JJ115",
+                "ping": 69
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 67,
+                "identifiers": [],
+                "name": "JH ",
+                "ping": 119
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 70,
+                "identifiers": [],
+                "name": "\ud83c\udff9^7|^#00ffff F ^#00cccc L^#009999 A^#006666 V ^#003333 I ^#000000 O ^7\u02e2\u02e3\u1d34",
+                "ping": 64
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 77,
+                "identifiers": [],
+                "name": "Trankiboy",
+                "ping": 77
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 81,
+                "identifiers": [],
+                "name": "^7Xarly ^#000000\u02e3 ^#da0101\u1d47\u1d49\u207f\u207f\u02b8'\u02e2",
+                "ping": 65
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 74,
+                "identifiers": [],
+                "name": "gabriel",
+                "ping": 68
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 73,
+                "identifiers": [],
+                "name": "shelby",
+                "ping": 86
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 72,
+                "identifiers": [],
+                "name": "^6\u1d38\u02e2^1\u1d9c^7 ^#68c3b7\u1d0d\u1d00^#a8dcd9\u0280\u026a\u1d00 ^#cceae8\u0280\u1d00^#FFFFFF\u1d0d\u1d0f\ua731",
+                "ping": 71
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 82,
+                "identifiers": [],
+                "name": "Franky",
+                "ping": 75
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 132,
+                "identifiers": [],
+                "name": "MSI",
+                "ping": 93
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 75,
+                "identifiers": [],
+                "name": "Aceite Primium",
+                "ping": 51
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 78,
+                "identifiers": [],
+                "name": "^*k",
+                "ping": 64
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 79,
+                "identifiers": [],
+                "name": "SECRET URUS",
+                "ping": 49
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 80,
+                "identifiers": [],
+                "name": "^*^1 Rexpul^#fff\u2076\u2079 ^#0000\u1dbb \ud835\uddd3 \ud803\udc01",
+                "ping": 78
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 83,
+                "identifiers": [],
+                "name": "^6TAR^4TITA ^3DE ^5PLA^2TANO",
+                "ping": 50
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 116,
+                "identifiers": [],
+                "name": "samuavi:)",
+                "ping": 69
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 85,
+                "identifiers": [],
+                "name": "areees23",
+                "ping": 73
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 86,
+                "identifiers": [],
+                "name": "ELPATRON33",
+                "ping": 57
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 89,
+                "identifiers": [],
+                "name": "SUXVRV",
+                "ping": 67
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 88,
+                "identifiers": [],
+                "name": "el nene",
+                "ping": 74
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 92,
+                "identifiers": [],
+                "name": "eseva3 payo FZ",
+                "ping": 73
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 94,
+                "identifiers": [],
+                "name": "josem",
+                "ping": 67
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 91,
+                "identifiers": [],
+                "name": "gamero",
+                "ping": 68
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 95,
+                "identifiers": [],
+                "name": "Zekisou",
+                "ping": 70
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 98,
+                "identifiers": [],
+                "name": "\uc6c3 \ud835\udce5\ud835\udcf2\ud835\udcfb\ud835\udcf0\ud835\udcee\ud835\udcf7 \uc6c3",
+                "ping": 65
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 99,
+                "identifiers": [],
+                "name": "^#800080\ud835\udd8e^7\ud835\udd7d\ud835\udd94\ud835\udd87\ud835\udd8e \ud835\udd83 ^#800080\u1d47\u1d43\u02e1\u02e1\u1d43\u02e2",
+                "ping": 44
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 101,
+                "identifiers": [],
+                "name": "Gorka Basatia",
+                "ping": 67
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 102,
+                "identifiers": [],
+                "name": "nizar",
+                "ping": 60
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 103,
+                "identifiers": [],
+                "name": "TheK1ng",
+                "ping": 73
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 105,
+                "identifiers": [],
+                "name": "Bobette",
+                "ping": 136
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 104,
+                "identifiers": [],
+                "name": "sanlop",
+                "ping": 89
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 107,
+                "identifiers": [],
+                "name": "USUARIO",
+                "ping": 56
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 106,
+                "identifiers": [],
+                "name": "^#FFFFFFpalonko",
+                "ping": 42
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 110,
+                "identifiers": [],
+                "name": "Piolin",
+                "ping": 74
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 109,
+                "identifiers": [],
+                "name": "wzzgordo",
+                "ping": 63
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 113,
+                "identifiers": [],
+                "name": "//jaume",
+                "ping": 116
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 115,
+                "identifiers": [],
+                "name": "alham",
+                "ping": 86
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 118,
+                "identifiers": [],
+                "name": "perucho77",
+                "ping": 57
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 117,
+                "identifiers": [],
+                "name": "rachesnek",
+                "ping": 81
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 121,
+                "identifiers": [],
+                "name": "Adriian_010",
+                "ping": 70
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 123,
+                "identifiers": [],
+                "name": "kenai",
+                "ping": 69
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 122,
+                "identifiers": [],
+                "name": "Pata patapimmm",
+                "ping": 71
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 124,
+                "identifiers": [],
+                "name": "alex gonzalez",
+                "ping": 62
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 126,
+                "identifiers": [],
+                "name": "34665",
+                "ping": 85
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 128,
+                "identifiers": [],
+                "name": "Lorena",
+                "ping": 204
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 127,
+                "identifiers": [],
+                "name": "axele",
+                "ping": 64
+            },
+            {
+                "endpoint": "127.0.0.1:1234",
+                "id": 129,
+                "identifiers": [],
+                "name": "SoyAytuB",
+                "ping": 70
+            }
+        ],
+        "ownerID": 1495284,
+        "private": false,
+        "fallback": false,
+        "connectEndPoints": [
+            "https://cstjgczs.filter.evo-filter.com/"
+        ],
+        "upvotePower": 45,
+        "burstPower": 0,
+        "support_status": "supported",
+        "svMaxclients": 650,
+        "ownerName": "DaniSuarezSC",
+        "ownerProfile": "https://forum.cfx.re/u/DaniSuarezSC",
+        "suspendedTill": "",
+        "ownerAvatar": "https://forum.cfx.re/user_avatar/forum.cfx.re/danisuarezsc/128/3847931_2.png",
+        "lastSeen": "2025-12-29T14:31:00.5458814Z",
+        "iconVersion": 1609047931
+    }
+}

