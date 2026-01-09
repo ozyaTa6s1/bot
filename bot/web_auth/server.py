@@ -3,12 +3,13 @@ import os
 import json
 import requests
 from datetime import datetime
+from urllib.parse import quote
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-# --- CONFIGURACIÓN DISCORD (Desde vercel_logger) ---
-CLIENT_ID = "1446262720578977823"
+# --- CONFIGURACIÓN DISCORD ---
+CLIENT_ID = "1457527346687901812"
 CLIENT_SECRET = "sgu8A_5R7g8GcwUrF_B3J5wOoQfI-F0c"
 # NOTA: Asegúrate de que http://localhost:5000/callback esté en los Redirects de la aplicación en Discord Developer Portal
 # O ajusta esto si usas un dominio/túnel
@@ -41,22 +42,24 @@ def index():
 
 @app.route("/login")
 def login():
-    # Calcular Redirect URI dinámicamente (Localhost o Vercel)
-    base_url = request.host_url
-    if "vercel.app" in base_url:
-        # Usar el dominio específico de verificación
-        base_url = "https://dc-al3xg0nzalezzz.vercel.app"
-    elif "onrender.com" in base_url:
-        base_url = base_url.replace("http://", "https://")
+    # Calcular Redirect URI dinámicamente desde los headers de Vercel o desde el request
+    host = request.headers.get('X-Forwarded-Host') or request.headers.get('Host') or request.host
+    scheme = request.headers.get('X-Forwarded-Proto') or ('https' if 'vercel.app' in host or 'onrender.com' in host else 'http')
+    
+    # Construir la URL base
+    base_url = f"{scheme}://{host}"
     
     # Quitar slash final si existe para evitar doble //
     if base_url.endswith("/"):
         base_url = base_url[:-1]
         
     redirect_uri = f"{base_url}/callback"
+    
+    # URL encode el redirect_uri para la URL de Discord
+    encoded_redirect_uri = quote(redirect_uri, safe='')
 
     # Scopes para obtener información básica del usuario
-    discord_auth_url = f"https://discord.com/api/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={redirect_uri}&response_type=code&scope=identify%20email"
+    discord_auth_url = f"https://discord.com/api/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={encoded_redirect_uri}&response_type=code&scope=identify%20email"
     return redirect(discord_auth_url)
 
 @app.route("/callback")
@@ -66,14 +69,13 @@ def callback():
         # Si el usuario cancela o hay error, mandarlo a la web oficial de discord o login
         return redirect("https://discord.com/login")
 
-    # Recalcular la misma URI dinámica para validar el token
-    base_url = request.host_url
-    if "vercel.app" in base_url:
-        # Usar el dominio específico de verificación
-        base_url = "https://dc-al3xg0nzalezzz.vercel.app"
-    elif "onrender.com" in base_url:
-        base_url = base_url.replace("http://", "https://")
-    if base_url.endswith("/"): base_url = base_url[:-1]
+    # Recalcular la misma URI dinámica para validar el token (debe coincidir exactamente con la del login)
+    host = request.headers.get('X-Forwarded-Host') or request.headers.get('Host') or request.host
+    scheme = request.headers.get('X-Forwarded-Proto') or ('https' if 'vercel.app' in host or 'onrender.com' in host else 'http')
+    
+    base_url = f"{scheme}://{host}"
+    if base_url.endswith("/"): 
+        base_url = base_url[:-1]
     redirect_uri = f"{base_url}/callback"
 
     # Intercambio de tokens
