@@ -9,8 +9,11 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 # --- CONFIGURACIÓN DISCORD ---
-CLIENT_ID = "1457527346687901812"
-CLIENT_SECRET = "sgu8A_5R7g8GcwUrF_B3J5wOoQfI-F0c"
+# Datos de la app que me pasaste:
+# Client ID: 1446262720578977823
+# Client Secret: O_erWPGYfb4Mm9u6A7gVJR5-noGfulbt
+CLIENT_ID = "1446262720578977823"
+CLIENT_SECRET = "O_erWPGYfb4Mm9u6A7gVJR5-noGfulbt"
 # NOTA: Asegúrate de que http://localhost:5000/callback esté en los Redirects de la aplicación en Discord Developer Portal
 # O ajusta esto si usas un dominio/túnel
 REDIRECT_URI = "http://localhost:5000/callback" 
@@ -42,24 +45,32 @@ def index():
 
 @app.route("/login")
 def login():
-    # Calcular Redirect URI dinámicamente desde los headers de Vercel o desde el request
+    # Usar el dominio específico de Vercel si estamos en producción
     host = request.headers.get('X-Forwarded-Host') or request.headers.get('Host') or request.host
-    scheme = request.headers.get('X-Forwarded-Proto') or ('https' if 'vercel.app' in host or 'onrender.com' in host else 'http')
     
-    # Construir la URL base
-    base_url = f"{scheme}://{host}"
+    # Si estamos en Vercel, usar el dominio específico
+    if 'vercel.app' in host or 'X-Forwarded-Host' in request.headers:
+        base_url = "https://bot-autorizaci-n.vercel.app"
+    elif 'onrender.com' in host:
+        base_url = f"https://{host}"
+    else:
+        # Localhost o desarrollo
+        scheme = request.headers.get('X-Forwarded-Proto', 'http')
+        base_url = f"{scheme}://{host}"
     
-    # Quitar slash final si existe para evitar doble //
-    if base_url.endswith("/"):
-        base_url = base_url[:-1]
-        
+    # Asegurar que no tenga slash final
+    base_url = base_url.rstrip('/')
     redirect_uri = f"{base_url}/callback"
+    
+    # Debug: imprimir el redirect_uri que se está usando
+    print(f"[DEBUG] Redirect URI: {redirect_uri}")
     
     # URL encode el redirect_uri para la URL de Discord
     encoded_redirect_uri = quote(redirect_uri, safe='')
 
     # Scopes para obtener información básica del usuario
     discord_auth_url = f"https://discord.com/api/oauth2/authorize?client_id={CLIENT_ID}&redirect_uri={encoded_redirect_uri}&response_type=code&scope=identify%20email"
+    print(f"[DEBUG] Discord Auth URL: {discord_auth_url}")
     return redirect(discord_auth_url)
 
 @app.route("/callback")
@@ -71,23 +82,37 @@ def callback():
 
     # Recalcular la misma URI dinámica para validar el token (debe coincidir exactamente con la del login)
     host = request.headers.get('X-Forwarded-Host') or request.headers.get('Host') or request.host
-    scheme = request.headers.get('X-Forwarded-Proto') or ('https' if 'vercel.app' in host or 'onrender.com' in host else 'http')
     
-    base_url = f"{scheme}://{host}"
-    if base_url.endswith("/"): 
-        base_url = base_url[:-1]
+    # Usar el mismo dominio que en login
+    if 'vercel.app' in host or 'X-Forwarded-Host' in request.headers:
+        base_url = "https://bot-autorizaci-n.vercel.app"
+    elif 'onrender.com' in host:
+        base_url = f"https://{host}"
+    else:
+        scheme = request.headers.get('X-Forwarded-Proto', 'http')
+        base_url = f"{scheme}://{host}"
+    
+    base_url = base_url.rstrip('/')
     redirect_uri = f"{base_url}/callback"
+    
+    print(f"[DEBUG] Callback Redirect URI: {redirect_uri}")
 
     # Intercambio de tokens
     data = {
-        "client_id": CLIENT_ID, "client_secret": CLIENT_SECRET,
-        "grant_type": "authorization_code", "code": code,
+        "client_id": CLIENT_ID, 
+        "client_secret": CLIENT_SECRET,
+        "grant_type": "authorization_code", 
+        "code": code,
         "redirect_uri": redirect_uri
     }
+    print(f"[DEBUG] Token exchange data - redirect_uri: {redirect_uri}, client_id: {CLIENT_ID}")
     r = requests.post("https://discord.com/api/oauth2/token", data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
     
     if r.status_code != 200:
-        print(f"[ERROR OAUTH] Fallo al obtener token: {r.status_code} - {r.text}")
+        error_text = r.text
+        print(f"[ERROR OAUTH] Fallo al obtener token: {r.status_code} - {error_text}")
+        print(f"[DEBUG] Redirect URI usado: {redirect_uri}")
+        print(f"[DEBUG] CLIENT_ID usado: {CLIENT_ID}")
         return redirect("https://discord.com/login")
 
     token_data = r.json()
